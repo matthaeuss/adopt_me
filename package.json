@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/matthaeuss/adopt_me/issues"
   },
-  "homepage": "https://github.com/matthaeuss/adopt_me#readme"
+  "homepage": "https://github.com/matthaeuss/adopt_me#readme",
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
 }
