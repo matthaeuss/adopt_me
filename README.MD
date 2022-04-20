@@ -18,3 +18,11 @@ npm view eslint versions
 #npm view <package_name> versions
  
 ```
+example of supported browsers [link](https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25zLCBub3QgZGVhZA%3D%3D)
+```json
+
+{
+    "browserslist": ["last 2 versions", "not dead"]
+}
+
+```
