@@ -3,11 +3,16 @@
 ## Dictionary 
 - CDN - Content Delivery Network
 - Transpilator - (i.e. Babel, Typescript) === transpilation and compilation. Conversion between languages version.
+- SPA - single page application
+- PWA - progressive web apps
+- SSR - server side rendering
 
 ## Tools
 - Prettier - code formatter [Link](https://www.npmjs.com/package/prettier)
 - Linter(ESlink) - static code analyzer with guideline (Airbnb) [Link](https://eslint.org/)
 - Module Bundler (Webpack, Parcel)
+- Storybook - 
+- State management library - (Flux, Redux, Mobx)
 
 ## Snippets
 
