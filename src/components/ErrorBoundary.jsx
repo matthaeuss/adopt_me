@@ -14,7 +14,7 @@ class ErrorBoundary extends Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    console.error("Error boundary caught n error", error, errorInfo);
+    console.error("Error boundary caught an error", error, errorInfo);
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
