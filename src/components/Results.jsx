@@ -4,7 +4,7 @@ export function Results({ pets }) {
   return (
     <>
       {!pets.length ? (
-        <h1>No pets found.</h1>
+        <h1>No pets found!!</h1>
       ) : (
         pets.map(({ name, animal, breed, id, images, city, state }) => (
           <Pet
