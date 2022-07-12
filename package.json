@@ -6,31 +6,42 @@
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.html -p 1235",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matthaeuss/adopt_me.git"
+    "url": "git+https://github.com/olivergav/adopt_me.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matthaeuss/adopt_me/issues"
+    "url": "https://github.com/olivergav/adopt_me/issues"
   },
-  "homepage": "https://github.com/matthaeuss/adopt_me#readme",
+  "homepage": "https://github.com/olivergav/adopt_me#readme",
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "@testing-library/react": "^13.3.0",
     "eslint": "8.13",
     "eslint-config-prettier": "8.5",
     "eslint-plugin-import": "2.26",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
+    "jest": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
+    "jest-fetch-mock": "^3.0.3",
+    "nyc": "^15.1.0",
     "parcel": "^2.4.1",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "react-test-renderer": "^18.2.0"
   },
   "dependencies": {
+    "@parcel/babel-preset-env": "^2.6.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0"
@@ -38,5 +49,11 @@
   "browserslist": [
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./src/setupJest.js"
+    ]
+  }
 }
